@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to the selector pug
+  p Welcome to the shakes pug
   div(class="container-fluid")
         div(class="row")
             -
@@ -23,7 +23,7 @@ block content
                         "cost": "6.40 $"
                     },                   
                 ]
-            each v,index in monitor
+            each v,index in shakes 
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.flavour}
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.size}
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.cost}
